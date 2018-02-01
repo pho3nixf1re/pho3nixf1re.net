@@ -1,0 +1,12 @@
+extends:
+  - plugin:react/recommended
+  - plugin:prettier/recommended
+plugins:
+  - react
+rules:
+  react/jsx-boolean-value:
+    - error
+    - always
+  react/no-multi-comp: error
+  react/self-closing-comp: error
+parser: babel-eslint

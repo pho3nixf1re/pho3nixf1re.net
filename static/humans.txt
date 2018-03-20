@@ -1,0 +1,19 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+Your title: Matthew Turney
+Site: matthew.a.turney@gmail.com
+Twitter: @pho3nixf1re
+Keybase: https://keybase.io/mturney
+
+# THANKS
+
+Name: Brooke Turney -- My loving wife
+Name: Esther Turney -- My awesome mother
+
+# TECHNOLOGY COLOPHON
+
+Components: Gatsby.js, React.js, Fontawesome
+Software: Node.js, Webpack, SASS

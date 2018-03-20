@@ -27,6 +27,7 @@ const TemplateWrapper = ({ children }) => (
         href="//fonts.googleapis.com/css?family=Sanchez|Source+Sans+Pro"
         rel="stylesheet"
       />
+      <link type="text/plain" rel="author" href="humans.txt" />
     </Helmet>
     {children()}
   </div>

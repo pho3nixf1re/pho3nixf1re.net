@@ -5,6 +5,8 @@ import {
   FaLinkedinSquare,
   FaStackOverflow,
 } from 'react-icons/lib/fa'
+import Page from '../components/Page'
+import styles from './index.module.scss'
 
 const links = [
   {
@@ -26,21 +28,21 @@ const links = [
 ]
 
 const IndexPage = () => (
-  <div>
-    <h1>Matthew Turney</h1>
-    <h2>
+  <Page>
+    <h1 className={styles.header}>Matthew Turney</h1>
+    <p className={styles.subheader}>
       <a href="https://twitter.com/pho3nixf1re">@pho3nixf1re</a>
-    </h2>
-    <ul>
+    </p>
+    <ul className={styles.links}>
       {links.map(({ Icon, link }) => (
-        <li key={link}>
+        <li key={link} className={styles.link}>
           <a href={link}>
             <Icon />
           </a>
         </li>
       ))}
     </ul>
-  </div>
+  </Page>
 )
 
 export default IndexPage

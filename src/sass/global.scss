@@ -1,0 +1,123 @@
+@import './colors.scss';
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+// sass-lint:disable single-line-per-selector
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video,
+button {
+  margin: 0;
+  padding: 0;
+  border: none;
+  border-radius: 0;
+  font: inherit;
+  font-size: 100%;
+  line-height: 1.4em;
+  vertical-align: baseline;
+}
+
+body {
+  background-color: $background;
+  color: $fontColor;
+  font-family: Source Sans Pro;
+  font-weight: 400;
+  line-height: 1;
+}
+
+ol,
+ul {
+  margin-left: 1em;
+  padding-left: 2.5rem;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote::before,
+blockquote::after,
+q::before,
+q::after {
+  // sass-lint:disable-block no-duplicate-properties
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+h1, h2, h3 {
+  line-height: 1.2em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: $fontColorDark;
+  font-family: Sanchez;
+}
+
+h1 {
+  font-size: 2.5em;
+  font-weight: 600;
+}
+
+h2 {
+  font-size: 1.5em;
+  font-weight: 600;
+}
+
+h3 {
+  font-size: 1.2em;
+  font-weight: 600;
+}
+
+h4 {
+  font-size: 1.17em;
+  font-weight: 600;
+}
+
+h5 {
+  font-size: 1.1em;
+}
+
+h6 {
+  font-size: 1em;
+}
+
+p {
+  margin: 1em 0;
+}
+
+strong {
+  font-weight: 600;
+}
+
+em {
+  font-style: italic;
+}
+
+a {
+  color: $primary;
+  text-decoration: none;
+}

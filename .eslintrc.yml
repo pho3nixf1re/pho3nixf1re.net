@@ -1,4 +1,5 @@
 extends:
+  - eslint:recommended
   - plugin:react/recommended
   - plugin:prettier/recommended
 plugins:
@@ -9,4 +10,8 @@ rules:
     - always
   react/no-multi-comp: error
   react/self-closing-comp: error
+  react/prop-types: 0
+env:
+  browser: true
+  node: true
 parser: babel-eslint

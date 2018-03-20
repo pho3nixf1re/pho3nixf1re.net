@@ -1,0 +1,26 @@
+
+.header {
+  text-align: center;
+}
+
+.subheader {
+  margin-bottom: 30px;
+  font-size: 30px;
+  text-align: center;
+}
+
+.links {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 10px;
+  list-style: none;
+
+  > * {
+    margin-right: 20px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}

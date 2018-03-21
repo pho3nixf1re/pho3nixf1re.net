@@ -11,6 +11,8 @@ rules:
   react/no-multi-comp: error
   react/self-closing-comp: error
   react/prop-types: 0
+globals:
+  graphql: false
 env:
   browser: true
   node: true

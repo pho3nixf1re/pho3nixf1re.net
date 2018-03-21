@@ -1,25 +1,23 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import { compose, withProps } from 'recompose'
 import Helmet from 'react-helmet'
 import '../sass/global.scss'
+import {
+  selectTitle,
+  selectDescription,
+  selectKeywords,
+} from '../lib/selectors'
 
-const TemplateWrapper = ({ children }) => (
+const TemplateWrapper = ({ children, title, description, keywords = [] }) => (
   <div>
     <Helmet
-      defaultTitle="Matthew Turney"
+      defaultTitle={title}
       meta={[
-        { name: 'description', content: 'The landing page of Matthew Turney.' },
+        { name: 'description', content: description },
         {
           name: 'keywords',
-          content: [
-            'matthew turney',
-            'software engineer',
-            'developer',
-            'javascript',
-            'ruby',
-            'node.js',
-            'graphql',
-          ].join(),
+          content: keywords.join(),
         },
       ]}
     >
@@ -37,4 +35,22 @@ TemplateWrapper.propTypes = {
   children: PropTypes.func,
 }
 
-export default TemplateWrapper
+export const query = graphql`
+  query FetchMetadata {
+    site {
+      siteMetadata {
+        title
+        description
+        keywords
+      }
+    }
+  }
+`
+
+export default compose(
+  withProps(({ data }) => ({
+    title: selectTitle(data),
+    description: selectDescription(data),
+    keywords: selectKeywords(data),
+  }))
+)(TemplateWrapper)

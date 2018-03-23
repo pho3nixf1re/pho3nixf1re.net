@@ -13,6 +13,7 @@ import {
 const TemplateWrapper = ({ children, title, description, keywords = [] }) => (
   <div>
     <Helmet
+      htmlAttributes={{ lang: 'en' }}
       defaultTitle={title}
       meta={[
         { name: 'description', content: description },

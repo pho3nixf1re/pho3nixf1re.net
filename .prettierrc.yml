@@ -1,4 +1,4 @@
-# --trailing-comma es5 --no-semi --single-quote --write \"src/**/*.js\"
+arrowParens: avoid
 trailingComma: es5
 semi: false
 singleQuote: true

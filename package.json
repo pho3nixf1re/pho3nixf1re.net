@@ -22,13 +22,15 @@
     "@fortawesome/react-fontawesome": "^0.1.11",
     "autoprefixer": "^9.1.5",
     "babel-eslint": "^10.1.0",
-    "gatsby": "^1.9.277",
-    "gatsby-link": "^1.6.46",
-    "gatsby-plugin-postcss-sass": "^1.0.22",
-    "gatsby-plugin-react-helmet": "^2.0.11",
-    "postcss-pxtorem": "^4.0.1",
+    "gatsby": "^2.24.47",
+    "gatsby-plugin-react-helmet": "^3.3.10",
+    "gatsby-plugin-sass": "^2.3.12",
+    "node-sass": "^4.14.1",
+    "postcss-pxtorem": "^5.1.1",
     "ramda": "^0.25.0",
-    "react-helmet": "^5.2.0",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-helmet": "^6.1.0",
     "recompose": "^0.30.0"
   },
   "devDependencies": {
@@ -36,7 +38,7 @@
     "eslint-config-prettier": "^6.11.0",
     "eslint-plugin-prettier": "^3.1.4",
     "eslint-plugin-react": "^7.20.6",
-    "gh-pages": "^1.2.0",
+    "gh-pages": "^3.1.0",
     "prettier": "^2.0.5",
     "sass-lint": "^1.13.1"
   }

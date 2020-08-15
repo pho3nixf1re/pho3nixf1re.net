@@ -14,8 +14,6 @@ rules:
 settings:
   react:
     version: detect
-globals:
-  graphql: false
 env:
   browser: true
   node: true

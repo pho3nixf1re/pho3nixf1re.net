@@ -1,2 +1,0 @@
-webpackJsonp([60335399758886],{143:function(e,t){e.exports={data:{site:{siteMetadata:{title:"Matthew Turney",description:"The landing page of Matthew Turney.",keywords:["matthew turney","software engineer","developer","javascript","ruby","node.js","graphql"]}}},layoutContext:{}}}});
-//# sourceMappingURL=path----de6009847fb4a7eb3351.js.map

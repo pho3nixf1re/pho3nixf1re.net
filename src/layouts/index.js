@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import fontawesome from '@fortawesome/fontawesome'
+import { dom } from '@fortawesome/fontawesome-svg-core'
 import { compose, withProps } from 'recompose'
 import Helmet from 'react-helmet'
 import '../sass/global.scss'
@@ -28,7 +28,7 @@ const TemplateWrapper = ({ children, title, description, keywords = [] }) => (
         rel="stylesheet"
       />
       <link type="text/plain" rel="author" href="humans.txt" />
-      <style>{fontawesome.dom.css()}</style>
+      <style>{dom.css()}</style>
     </Helmet>
     {children()}
   </div>

@@ -15,5 +15,5 @@ Name: Esther Turney -- My awesome mother
 
 # TECHNOLOGY COLOPHON
 
-Components: Gatsby.js, React.js, Fontawesome
+Components: GatsbyJS, ReactJS, Fontawesome
 Software: Node.js, Webpack, SASS

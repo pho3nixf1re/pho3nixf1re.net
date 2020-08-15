@@ -1,12 +1,12 @@
 import React from 'react'
 import { withProps } from 'recompose'
-import FontAwesomeIcon from '@fortawesome/react-fontawesome'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {
   faGithubAlt,
   faStackOverflow,
   faFacebookF,
   faLinkedinIn,
-} from '@fortawesome/fontawesome-free-brands'
+} from '@fortawesome/free-brands-svg-icons'
 import KeybaseIcon from '../components/KeybaseIcon'
 import Page from '../components/Page'
 import LinkItem from '../components/LinkItem'
@@ -47,10 +47,14 @@ const IndexPage = () => (
       <a href="https://twitter.com/pho3nixf1re">@pho3nixf1re</a>
     </p>
     <ul className={styles.links}>
-      {links.slice(0, 2).map(link => <LinkItem key={link.link} {...link} />)}
+      {links.slice(0, 2).map(link => (
+        <LinkItem key={link.link} {...link} />
+      ))}
     </ul>
     <ul className={styles.links}>
-      {links.slice(2).map(link => <LinkItem key={link.link} {...link} />)}
+      {links.slice(2).map(link => (
+        <LinkItem key={link.link} {...link} />
+      ))}
     </ul>
   </Page>
 )

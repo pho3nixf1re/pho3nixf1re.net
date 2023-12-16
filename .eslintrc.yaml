@@ -1,12 +1,9 @@
 extends:
   - eslint:recommended
-  - next/core-web-vitals
-  - plugin:react/recommended
+  - next
   - plugin:prettier/recommended
 rules:
-  react/jsx-boolean-value:
-    - error
-    - always
+  react/jsx-boolean-value: [error, always]
   react/no-multi-comp: error
   react/self-closing-comp: error
   react/prop-types: 0
@@ -16,4 +13,3 @@ settings:
 env:
   browser: true
   node: true
-parser: babel-eslint

@@ -6,7 +6,7 @@ import {
   selectDescription,
   selectKeywords,
   selectTitle,
-} from '../../lib/selectors'
+} from '../../../../src.bak/lib/selectors'
 import './global.scss'
 import styles from './index.module.scss'
 

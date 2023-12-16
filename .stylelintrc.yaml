@@ -1,0 +1,9 @@
+rules:
+  max-nesting-depth: 2
+  selector-class-pattern:
+    - ^[a-z][a-zA-Z0-9]+$
+    - resolveNestedSelectors: true
+  no-empty-source: true
+  rule-empty-line-before: always-multi-line
+  at-rule-empty-line-before: always
+  block-no-empty: true

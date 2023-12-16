@@ -1,0 +1,16 @@
+.container {
+  display: flex;
+  align-items: center;
+  padding: 0.5em 0;
+}
+
+.icon {
+  width: 1em;
+  height: 1em;
+  fill: currentColor;
+  overflow: hidden;
+}
+
+.label {
+  margin-left: 0.5em;
+}

@@ -11,13 +11,14 @@ permissions:
 concurrency: ${{ github.workflow }}-${{ github.ref }}
 
 jobs:
-  release:
-    name: Release
+  prepare:
+    name: Setup dependencies
     runs-on: ubuntu-latest
+    outputs:
+      hasRelease: ${{ steps.set_output.outputs.hasRelease }}
     steps:
       - name: Checkout Repo
         uses: actions/checkout@v4
-
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
@@ -26,6 +27,22 @@ jobs:
           cache-dependency-path: package-lock.json
       - name: Install dependencies
         run: npm ci
+      - name: Check for changeset
+        run: npx changeset status
+      - name: Check for changeset
+        run: npx changeset status --output changesets.json
+      - name: Set output
+        id: set_output
+        run:
+          echo "::set-output name=hasRelease::$(jq -r '.releases | length > 0'
+          changesets.json)"
+
+  create-release:
+    if: ${{ needs.prepare.outputs.hasRelease == 'true' }}
+    name: Create release
+    runs-on: ubuntu-latest
+    needs: prepare
+    steps:
       - name: Rotate changelogs
         run: npx changeset version
       - name: Tag release

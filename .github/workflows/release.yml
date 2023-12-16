@@ -32,7 +32,7 @@ jobs:
         id: set_release
         run:
           echo "hasRelease=$(jq -r '.releases | length > 0' changesets.json)" >>
-          $GITHUB_ENV
+          "$GITHUB_OUTPUT"
       - name: Rotate logs and release
         if: ${{ steps.set_release.outputs.hasRelease == 'true' }}
         run: |

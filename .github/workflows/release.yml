@@ -5,15 +5,14 @@ on:
     branches:
       - main
 
-permissions:
-  contents: write
-
 concurrency: ${{ github.workflow }}-${{ github.ref }}
 
 jobs:
   prepare:
     name: Setup dependencies
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     outputs:
       hasRelease: ${{ steps.set_output.outputs.hasRelease }}
     steps:

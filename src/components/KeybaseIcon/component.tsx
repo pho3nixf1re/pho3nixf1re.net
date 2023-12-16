@@ -1,13 +1,17 @@
-import React from 'react'
+import styles from './component.module.scss'
+import cc from 'classcat'
 
-const KeybaseIcon = () => (
+type Props = {
+  className?: string
+}
+
+export const KeybaseIcon = ({ className }: Props) => (
   <svg
     x="0px"
     y="0px"
     viewBox="0 0 71 76.3"
-    ariaHidden={true}
     xmlSpace="preserve"
-    style={{ enableBackground: 'new 0 0 71 76.3', height: '1em' }}
+    className={cc([styles.container, className])}
   >
     <g transform="translate(-241.11756,-377.8123)">
       <path
@@ -17,5 +21,3 @@ const KeybaseIcon = () => (
     </g>
   </svg>
 )
-
-export default KeybaseIcon

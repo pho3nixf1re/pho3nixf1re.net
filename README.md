@@ -2,7 +2,8 @@
 
 The code that generates the personal website of Matthew Turney.
 
-For an overview of the project structure please refer to the [Gatsby documentation - Building with Components](https://www.gatsbyjs.org/docs/building-with-components/)
+For an overview of the project structure please refer to the
+[Gatsby documentation - Building with Components](https://www.gatsbyjs.org/docs/building-with-components/)
 
 ## Develop
 
@@ -11,13 +12,15 @@ For an overview of the project structure please refer to the [Gatsby documentati
 npm install
 
 # Run local development server
-npm start
+npm run dev
 ```
+
+Development server will be running at http://localhost:8000.
 
 ## Tests and linting
 
 This repo is linted using ESLint and PrettierJS. The lints are ran before the
-tests. They are both ran together.
+tests.
 
 ```sh
 npm test

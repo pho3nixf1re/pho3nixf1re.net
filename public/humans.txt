@@ -5,7 +5,6 @@
 
 Your title: Matthew Turney
 Site: matthew.a.turney@gmail.com
-Twitter: @pho3nixf1re
 Keybase: https://keybase.io/mturney
 
 # THANKS
@@ -16,4 +15,4 @@ Name: Esther Turney -- My awesome mother
 # TECHNOLOGY COLOPHON
 
 Components: GatsbyJS, ReactJS, Fontawesome
-Software: Node.js, Webpack, SASS
+Software: Node.js, Webpack, SCSS, Typescript

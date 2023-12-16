@@ -8,12 +8,12 @@
       },
       "extensions": [
         "dbaeumer.vscode-eslint",
-        "esbenp.prettier-vscode",
+        "esbenp.prettier-vscode"
       ]
     }
   },
   "forwardPorts": [
-    8000
+    3000
   ],
   "postCreateCommand": "npm install"
 }

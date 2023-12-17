@@ -44,5 +44,6 @@ jobs:
           git push --follow-tags
           echo "release=$(jq -r '.releases[0].commits[0].hash' changesets.json)" >> $GITHUB_OUTPUT
       - name: Create github release notes
+        if: ${{ steps.set_release.outputs.release }}
         run: |
           gh release create "v${{ steps.release.outputs.release }}" --generate-notes

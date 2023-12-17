@@ -35,5 +35,5 @@ jobs:
         if: ${{ steps.set_release.outputs.hasRelease == 'true' }}
         run: |
           npx changeset version
-          npx changeset publish
+          npx changeset tag
           git-push --follow-tags

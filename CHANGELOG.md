@@ -1,5 +1,11 @@
 # pho3nixf1re.net
 
+## 2.0.2
+
+### Patch Changes
+
+- [#17](https://github.com/pho3nixf1re/pho3nixf1re.net/pull/17) [`1405ff2`](https://github.com/pho3nixf1re/pho3nixf1re.net/commit/1405ff24c172f7d3a91654d12b57b73befab5e1c) Thanks [@pho3nixf1re](https://github.com/pho3nixf1re)! - tags are not kicking off releases
+
 ## 2.0.1
 
 ### Patch Changes

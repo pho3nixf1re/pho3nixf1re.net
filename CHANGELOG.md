@@ -1,5 +1,11 @@
 # pho3nixf1re.net
 
+## 2.0.1
+
+### Patch Changes
+
+- [#16](https://github.com/pho3nixf1re/pho3nixf1re.net/pull/16) [`23b39c9`](https://github.com/pho3nixf1re/pho3nixf1re.net/commit/23b39c96aeebb27e4c0783c63af642afac6cc8ab) Thanks [@pho3nixf1re](https://github.com/pho3nixf1re)! - testing release process
+
 ## 2.0.0
 
 ### Major Changes

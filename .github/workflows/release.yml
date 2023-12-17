@@ -37,7 +37,12 @@ jobs:
           "$GITHUB_OUTPUT"
       - name: Rotate logs and release
         if: ${{ steps.set_release.outputs.hasRelease == 'true' }}
+        id: release
         run: |
           npx changeset version
           npx changeset tag
           git push --follow-tags
+          echo "release=$(jq -r '.releases[0].commits[0].hash' changesets.json)" >> $GITHUB_OUTPUT
+      - name: Create github release notes
+        run: |
+          gh release create "v${{ steps.release.outputs.release }}" --generate-notes

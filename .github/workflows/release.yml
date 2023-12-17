@@ -38,4 +38,4 @@ jobs:
         run: |
           npx changeset version
           npx changeset tag
-          git-push --follow-tags
+          git push --follow-tags

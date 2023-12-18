@@ -18,11 +18,11 @@ jobs:
       - name: Checkout Repo
         uses: actions/checkout@v4
         with:
-          token: ${{ secrets.PAT }}
+          token: ${{ env.GITHUB_TOKEN }}
       - name: Configure git author
         run: |
-          git config --global user.name "github-actions[bot]"
-          git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config --global user.name "github-actions"
+          git config --global user.email "github-actions@github.com"
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
@@ -50,3 +50,4 @@ jobs:
         if: ${{ steps.release.outputs.release != '' }}
         run: |
           gh release create "v${{ steps.release.outputs.release }}" --generate-notes
+          gh workflow run build-and-deploy.yml --ref "${{ steps.release.outputs.release }}"

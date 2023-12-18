@@ -1,5 +1,11 @@
 # pho3nixf1re.net
 
+## 2.0.3
+
+### Patch Changes
+
+- [#18](https://github.com/pho3nixf1re/pho3nixf1re.net/pull/18) [`7730204`](https://github.com/pho3nixf1re/pho3nixf1re.net/commit/7730204bcfb0cb70308da8397fc816ccdd5397c8) Thanks [@pho3nixf1re](https://github.com/pho3nixf1re)! - allow workflows to trigger other workflows
+
 ## 2.0.2
 
 ### Patch Changes

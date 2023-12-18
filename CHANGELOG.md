@@ -1,5 +1,11 @@
 # pho3nixf1re.net
 
+## 2.0.10
+
+### Patch Changes
+
+- [#25](https://github.com/pho3nixf1re/pho3nixf1re.net/pull/25) [`b2eee86`](https://github.com/pho3nixf1re/pho3nixf1re.net/commit/b2eee866a2b53fa268db1e3fa29162c351fb9fc0) Thanks [@pho3nixf1re](https://github.com/pho3nixf1re)! - fix version typo
+
 ## 2.0.9
 
 ### Patch Changes

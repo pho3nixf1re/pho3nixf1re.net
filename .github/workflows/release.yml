@@ -21,7 +21,6 @@ jobs:
           token: ${{ secrets.PAT }}
       - name: Configure git author
         run: |
-          git config --unset http.https://github.com/.extraheader
           git config --global user.name "github-actions[bot]"
           git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
       - name: Setup Node.js

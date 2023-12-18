@@ -1,5 +1,11 @@
 # pho3nixf1re.net
 
+## 2.0.5
+
+### Patch Changes
+
+- [#20](https://github.com/pho3nixf1re/pho3nixf1re.net/pull/20) [`13125f3`](https://github.com/pho3nixf1re/pho3nixf1re.net/commit/13125f371d7626e1eec2bcd47b98c7d1cacf3c85) Thanks [@pho3nixf1re](https://github.com/pho3nixf1re)! - release notes still are not working due to bad jq extraction of version
+
 ## 2.0.4
 
 ### Patch Changes

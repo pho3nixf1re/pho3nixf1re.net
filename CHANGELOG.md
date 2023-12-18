@@ -1,5 +1,11 @@
 # pho3nixf1re.net
 
+## 2.0.9
+
+### Patch Changes
+
+- [#24](https://github.com/pho3nixf1re/pho3nixf1re.net/pull/24) [`1329f36`](https://github.com/pho3nixf1re/pho3nixf1re.net/commit/1329f3663e35356e3f7536f0e664485f061487d5) Thanks [@pho3nixf1re](https://github.com/pho3nixf1re)! - update token permissions for release
+
 ## 2.0.8
 
 ### Patch Changes

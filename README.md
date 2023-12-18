@@ -7,7 +7,7 @@ For an overview of the project structure please refer to the
 
 ## Develop
 
-```sh
+```zsh
 # Install dependencies
 npm install
 

@@ -1,5 +1,11 @@
 # pho3nixf1re.net
 
+## 2.0.6
+
+### Patch Changes
+
+- [#21](https://github.com/pho3nixf1re/pho3nixf1re.net/pull/21) [`697a9f8`](https://github.com/pho3nixf1re/pho3nixf1re.net/commit/697a9f837211017eed9450a43d87f0dca808a0ca) Thanks [@pho3nixf1re](https://github.com/pho3nixf1re)! - Configure git author in correct place
+
 ## 2.0.5
 
 ### Patch Changes

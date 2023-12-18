@@ -1,5 +1,11 @@
 # pho3nixf1re.net
 
+## 2.0.7
+
+### Patch Changes
+
+- [#22](https://github.com/pho3nixf1re/pho3nixf1re.net/pull/22) [`f188f39`](https://github.com/pho3nixf1re/pho3nixf1re.net/commit/f188f39b13aa36cd1d4f9932a1118bb7d795af8b) Thanks [@pho3nixf1re](https://github.com/pho3nixf1re)! - simplify logic to block deploys on PRs
+
 ## 2.0.6
 
 ### Patch Changes

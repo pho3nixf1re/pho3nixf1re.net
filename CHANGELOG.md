@@ -1,5 +1,11 @@
 # pho3nixf1re.net
 
+## 2.0.8
+
+### Patch Changes
+
+- [#23](https://github.com/pho3nixf1re/pho3nixf1re.net/pull/23) [`707f7c6`](https://github.com/pho3nixf1re/pho3nixf1re.net/commit/707f7c6109693476ae5cf5c0c0f2d8880589aefc) Thanks [@pho3nixf1re](https://github.com/pho3nixf1re)! - more tries at workflow stacking
+
 ## 2.0.7
 
 ### Patch Changes

@@ -1,5 +1,11 @@
 # pho3nixf1re.net
 
+## 2.0.4
+
+### Patch Changes
+
+- [#19](https://github.com/pho3nixf1re/pho3nixf1re.net/pull/19) [`fadc6cf`](https://github.com/pho3nixf1re/pho3nixf1re.net/commit/fadc6cf0b7f59f593c2fdde99d630f5eff5e7f2a) Thanks [@pho3nixf1re](https://github.com/pho3nixf1re)! - fix github release notes
+
 ## 2.0.3
 
 ### Patch Changes

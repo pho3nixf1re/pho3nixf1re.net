@@ -1,5 +1,11 @@
 # pho3nixf1re.net
 
+## 2.0.11
+
+### Patch Changes
+
+- [#26](https://github.com/pho3nixf1re/pho3nixf1re.net/pull/26) [`ccafa9c`](https://github.com/pho3nixf1re/pho3nixf1re.net/commit/ccafa9ce6337db2c21f5393936fbb6d8957d7bbf) Thanks [@pho3nixf1re](https://github.com/pho3nixf1re)! - tag
+
 ## 2.0.10
 
 ### Patch Changes

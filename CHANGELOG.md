@@ -1,5 +1,14 @@
 # pho3nixf1re.net
 
+## 2.1.1
+
+### Patch Changes
+
+- [#34](https://github.com/pho3nixf1re/pho3nixf1re.net/pull/34)
+  [`2180286`](https://github.com/pho3nixf1re/pho3nixf1re.net/commit/21802869d282d6db34eb3ae6ea006e03fbbc9370)
+  Thanks [@pho3nixf1re](https://github.com/pho3nixf1re)! - Need to tag and
+  create github release notes to kick off deployment
+
 ## 2.1.0
 
 ### Minor Changes

@@ -1,53 +1,27 @@
-name: Tag release changeset
+name: Release
 
 on:
   push:
     branches:
       - main
-  workflow_dispatch:
 
 concurrency: ${{ github.workflow }}-${{ github.ref }}
 
 jobs:
-  prepare:
-    name: Setup dependencies
+  release:
+    name: Release
     runs-on: ubuntu-latest
-    env:
-      GITHUB_TOKEN: ${{ secrets.PAT }}
     steps:
       - name: Checkout Repo
-        uses: actions/checkout@v4
-        with:
-          token: ${{ env.GITHUB_TOKEN }}
-      - name: Configure git author
-        run: |
-          git config --global user.name "github-actions"
-          git config --global user.email "github-actions@github.com"
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: 22
-          cache: npm
-          cache-dependency-path: package-lock.json
-      - name: Install dependencies
-        run: npm ci
-      - name: Check for changeset
-        run: npx changeset status --output changesets.json
-      - name: Set release output
-        id: set_release
-        run:
-          echo "hasRelease=$(jq -r '.releases | length > 0' changesets.json)" >>
-          "$GITHUB_OUTPUT"
-      - name: Rotate logs and release
-        if: ${{ steps.set_release.outputs.hasRelease == 'true' }}
-        id: release
-        run: |
-          npx changeset version
-          npx changeset tag
-          git push --follow-tags
-          echo "release=$(jq -r '.releases[0].newVersion' changesets.json)" >> $GITHUB_OUTPUT
-      - name: Create github release notes
-        if: ${{ steps.release.outputs.release != '' }}
-        run: |
-          gh release create "v${{ steps.release.outputs.release }}" --generate-notes
-          gh workflow run build-and-deploy.yml --ref "v${{ steps.release.outputs.release }}"
+        uses: actions/checkout@v3
+
+      - name: Install asdf & tools
+        uses: asdf-vm/actions/install@v3
+
+      - name: Install Dependencies
+        run: npm install
+
+      - name: Create Release Pull Request
+        uses: changesets/action@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

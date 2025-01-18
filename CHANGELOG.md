@@ -1,5 +1,21 @@
 # pho3nixf1re.net
 
+## 2.1.0
+
+### Minor Changes
+
+- [#31](https://github.com/pho3nixf1re/pho3nixf1re.net/pull/31)
+  [`ff1b4fe`](https://github.com/pho3nixf1re/pho3nixf1re.net/commit/ff1b4fe7435afd09923e67076b638767c5188e07)
+  Thanks [@pho3nixf1re](https://github.com/pho3nixf1re)! - Update to use the
+  asdf and changeset action
+
+### Patch Changes
+
+- [#29](https://github.com/pho3nixf1re/pho3nixf1re.net/pull/29)
+  [`774abea`](https://github.com/pho3nixf1re/pho3nixf1re.net/commit/774abea61460305ebab4b38c2e0c8591881289ae)
+  Thanks [@pho3nixf1re](https://github.com/pho3nixf1re)! - update github actions
+  dependencies
+
 ## 2.0.12
 
 ### Patch Changes

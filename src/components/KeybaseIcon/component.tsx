@@ -1,4 +1,5 @@
 import styles from './component.module.scss'
+import cc from 'classcat'
 
 type Props = {
   className?: string

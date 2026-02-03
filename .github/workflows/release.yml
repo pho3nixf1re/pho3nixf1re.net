@@ -15,8 +15,8 @@ jobs:
       - name: Checkout Repo
         uses: actions/checkout@v3
 
-      - name: Install asdf & tools
-        uses: asdf-vm/actions/install@v3
+      - name: Install mise & tools
+        uses: jdx/mise-action@v2
 
       - name: Install Dependencies
         run: npm install

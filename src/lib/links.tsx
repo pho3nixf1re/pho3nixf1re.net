@@ -1,4 +1,3 @@
-/* eslint-disable react/no-multi-comp */
 import { FunctionComponent } from 'react'
 import { Icon } from '@mdi/react'
 import { mdiFacebook, mdiGithub, mdiLinkedin, mdiStackOverflow } from '@mdi/js'

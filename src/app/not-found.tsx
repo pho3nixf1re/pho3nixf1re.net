@@ -1,6 +1,4 @@
-import LinkModule from 'next/link.js'
-
-const Link = LinkModule.default
+import Link from 'next/link'
 
 export default function NotFound() {
   return (

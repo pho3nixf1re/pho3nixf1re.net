@@ -3,7 +3,7 @@ import { Layout } from '@/components/Layout/component.tsx'
 import { links } from '@/lib/links.tsx'
 import styles from './page.module.scss'
 
-export default function IndexPage() {
+export default function HomePage() {
   return (
     <Layout>
       <h1 className={styles.header}>Matthew Turney</h1>

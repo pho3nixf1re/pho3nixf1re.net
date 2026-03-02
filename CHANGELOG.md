@@ -1,5 +1,14 @@
 # pho3nixf1re.net
 
+## 3.0.1
+
+### Patch Changes
+
+- [#47](https://github.com/pho3nixf1re/pho3nixf1re.net/pull/47)
+  [`6b91d23`](https://github.com/pho3nixf1re/pho3nixf1re.net/commit/6b91d23ab69166851d81202a1a3a48e35ac30a46)
+  Thanks [@copilot-swe-agent](https://github.com/apps/copilot-swe-agent)! - Bump
+  minimatch from 3.1.2 to 3.1.5 and from 9.0.5 to 9.0.9
+
 ## 3.0.0
 
 ### Major Changes

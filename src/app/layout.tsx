@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import { Fira_Code } from 'next/font/google'
+import { VersionLogger } from '@/components/VersionLogger/component.tsx'
 import './globals.scss'
 
 const firaCode = Fira_Code({ subsets: ['latin'] })
@@ -16,7 +17,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={firaCode.className}>
-      <body>{children}</body>
+      <body>
+        <VersionLogger />
+        {children}
+      </body>
     </html>
   )
 }

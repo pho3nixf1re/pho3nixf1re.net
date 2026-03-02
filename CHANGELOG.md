@@ -1,5 +1,14 @@
 # pho3nixf1re.net
 
+## 3.0.2
+
+### Patch Changes
+
+- [#49](https://github.com/pho3nixf1re/pho3nixf1re.net/pull/49)
+  [`79492db`](https://github.com/pho3nixf1re/pho3nixf1re.net/commit/79492db017eba02c9640cf697b310a2f4286f90a)
+  Thanks [@copilot-swe-agent](https://github.com/apps/copilot-swe-agent)! - Log
+  the application version to the browser console on page load
+
 ## 3.0.1
 
 ### Patch Changes

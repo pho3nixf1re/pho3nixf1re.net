@@ -1,5 +1,14 @@
 # pho3nixf1re.net
 
+## 3.0.3
+
+### Patch Changes
+
+- [#52](https://github.com/pho3nixf1re/pho3nixf1re.net/pull/52)
+  [`39d30c5`](https://github.com/pho3nixf1re/pho3nixf1re.net/commit/39d30c5d3cdf6cda5075e685e7351fe0c8e81cc0)
+  Thanks [@copilot-swe-agent](https://github.com/apps/copilot-swe-agent)! - bump
+  immutable from 4.3.7 to 4.3.8
+
 ## 3.0.2
 
 ### Patch Changes
